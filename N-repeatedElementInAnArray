@@ -1,0 +1,11 @@
+def repeatedNTimes(self, nums):
+        """
+        :type nums: List[int]
+        :rtype: int
+        """
+        new = set()
+        for i in nums:
+            if i in new:
+                return i
+            new.add(i)
+            
