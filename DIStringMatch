@@ -1,8 +1,4 @@
 def diStringMatch(self, s):
-        """
-        :type s: str
-        :rtype: List[int]
-        """
         prem = []
         low , high = 0, len(s)
         for i in s:
