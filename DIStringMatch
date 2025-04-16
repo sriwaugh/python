@@ -1,6 +1,7 @@
 def diStringMatch(self, s):
         prem = []
         low , high = 0, len(s)
+        
         for i in s:
             if i == 'I':
                 prem.append(low)
