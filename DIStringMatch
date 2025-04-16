@@ -1,0 +1,19 @@
+def diStringMatch(self, s):
+        """
+        :type s: str
+        :rtype: List[int]
+        """
+        prem = []
+        low , high = 0, len(s)
+        for i in s:
+            if i == 'I':
+                prem.append(low)
+                low += 1
+            else:
+                prem.append(high)
+                high -= 1
+        prem.append(low) 
+        return prem
+
+s = "IDID"
+print(diStringMatch(s))
