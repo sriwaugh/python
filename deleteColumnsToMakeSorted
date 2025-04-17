@@ -1,5 +1,4 @@
 def minDeletionSize(self, strs):
-
         dele = 0
 
         for j in range(len(strs[0])):  
