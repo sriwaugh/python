@@ -23,5 +23,6 @@ def validMountainArray(self, arr):
         if l == 0 or  r == n-1:
             return False
         return True
+
 arr = [0,3,2,1]
 print(validMountainArray(arr))
