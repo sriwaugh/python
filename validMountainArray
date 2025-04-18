@@ -7,6 +7,7 @@ def validMountainArray(self, arr):
         maxi = max(arr)
         l,r = 0,n-1
         ind = arr.index(maxi)
+        
         while l < ind or r > ind:
             if l != ind:
                 if arr[l]<arr[l+1]:
