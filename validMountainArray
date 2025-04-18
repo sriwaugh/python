@@ -3,7 +3,6 @@ def validMountainArray(self, arr):
         n = len(arr)
         if n <= 2:
             return False
-        cnt = 0
         maxi = max(arr)
         l,r = 0,n-1
         ind = arr.index(maxi)
