@@ -1,0 +1,21 @@
+def sortArrayByParityII(self, nums):
+        """
+        :type nums: List[int]
+        :rtype: List[int]
+        """
+        odd = []
+        even = []
+        for i in nums:
+            if i % 2 == 0:
+                even.append(i)
+            else:
+                odd.append(i)
+        for i in range(len(nums)):
+            if i % 2 == 0:
+                nums[i] =even.pop()
+            else:
+                nums[i] = odd.pop()
+        return nums
+
+nums = [4,2,5,7]
+print(sortArrayByParityII(nums))
