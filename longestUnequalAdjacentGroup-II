@@ -1,8 +1,5 @@
 def sortArrayByParityII(self, nums):
-        """
-        :type nums: List[int]
-        :rtype: List[int]
-        """
+        
         odd = []
         even = []
         for i in nums:
