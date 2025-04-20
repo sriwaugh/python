@@ -1,0 +1,14 @@
+def sortArrayByParity(self, nums):
+        
+        res = []
+        for i in nums:
+            if i % 2 == 0:
+                res.append(i)
+        
+        for i in nums:
+            if i % 2 != 0:
+                res.append(i)
+        return res
+
+arr = [1,2,2,3]
+print(sortArrayByParity(arr))
