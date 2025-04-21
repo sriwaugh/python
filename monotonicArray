@@ -1,0 +1,15 @@
+def isMonotonic(self, nums):
+        dec = inc = 0
+        n = len(nums)
+        for i in range(n-1):
+                if nums[i] > nums[i+1]:
+                    dec += 1
+                elif nums[i] < nums[i+1]:
+                    inc +=1 
+                else:
+                    dec += 1
+                    inc += 1
+        if dec == n-1 or inc == n-1:
+            return True
+        else:
+            return False
