@@ -1,4 +1,5 @@
 def transpose(matrix):
+        
         row = len(matrix)
         col = len(matrix[0])
         res = [[0]* row for _ in range(col)]
