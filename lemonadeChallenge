@@ -1,8 +1,4 @@
 def lemonadeChange(bills):
-        """
-        :type bills: List[int]
-        :rtype: bool
-        """
         fives, tens = 0, 0
 
         for i in bills:
@@ -23,5 +19,6 @@ def lemonadeChange(bills):
                     return False
             
         return True
+
 bills = [5,5,5,10,20]
 print(lemonadeChange(bills))
