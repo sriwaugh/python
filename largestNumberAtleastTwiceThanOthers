@@ -1,0 +1,9 @@
+nums = [3,6,1,0]
+maxi = max(nums)
+for val in nums:
+    if maxi != val:
+        multi = 2 * val
+        if multi > maxi:
+            print("-1")
+            exit()
+print(nums.index(maxi))
