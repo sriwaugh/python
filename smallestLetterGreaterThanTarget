@@ -3,5 +3,4 @@ target = "a"
 for val in letters:
     if ord(val) > ord(target):
         print(val)
-        exit()
 print(letters[0])
