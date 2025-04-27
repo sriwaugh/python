@@ -4,4 +4,5 @@ for i in range(len(nums)) :
     if sum(nums[:i]) == sum(nums[i+1:]) :
         print(i)
         exit()
+        
 print("-1")
