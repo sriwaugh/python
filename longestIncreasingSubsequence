@@ -1,0 +1,12 @@
+if len(nums) == 1:
+    print("1")
+cnt = 1
+maxi = 0
+for i in range(len(nums)-1):
+    if nums[i] < nums[i+1]:
+        cnt += 1
+    else:
+        cnt = 1
+    if cnt > maxi:
+        maxi = cnt
+print(maxi)
