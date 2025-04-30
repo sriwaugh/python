@@ -1,5 +1,6 @@
 ops = ["5","2","C","D","+"]
 res = []
+
 for val in ops:
     if val[-1].isdigit():
         res.append(int(val))
