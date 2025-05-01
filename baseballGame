@@ -1,0 +1,13 @@
+ops = ["5","2","C","D","+"]
+res = []
+for val in ops:
+    if val[-1].isdigit():
+        res.append(int(val))
+    elif val == "C":
+        res.pop()
+    elif val == "D":
+        res.append(2 * res[-1])  
+    elif val == "+":
+        res.append(res[-1] + res[-2])  
+
+print(sum(res))
