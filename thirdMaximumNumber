@@ -1,0 +1,5 @@
+nums1 = list(set(nums))
+nums1.sort(reverse = True)
+if len(nums1) < 3:
+    print (nums1[0])
+print(nums1[2])
