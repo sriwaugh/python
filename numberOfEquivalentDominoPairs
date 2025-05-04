@@ -6,4 +6,5 @@ for a, b in dominoes:
     key = a * 10 + b if a <= b else b * 10 + a
     count += mpp[key]
     mpp[key] += 1
+    
 print(count)
