@@ -1,0 +1,12 @@
+def missingNumber(nums):
+    nums.sort()
+    if nums[0] != 0:
+        return 0
+    for i in range(len(nums) - 1):
+        if nums[i] != nums[i + 1] - 1:
+            return nums[i] + 1
+    return nums[-1] + 1
+
+nums = [1, 0, 3]
+res = missingNumber(nums)
+print(res)
