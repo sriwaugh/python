@@ -1,0 +1,9 @@
+n = int(input("Enter the size of the array "))
+arr=[]
+print("Enter the elements of the array")
+for i in range(n):
+    arr.append(int(input()))
+for i in arr:
+    if len(str(i)) % 2 ==0:
+        count += 1
+print(f"The number of elemnts with even number of digits is {count}")
