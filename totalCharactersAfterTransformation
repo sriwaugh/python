@@ -1,0 +1,12 @@
+s = "abcyy", t = 2
+n = 1
+while n <= t:
+    new = ''
+    for ch in s:
+        if ch == 'z':
+            new += 'ab'
+        else:
+            new += chr(ord(ch) + 1)
+        s = new
+        n += 1
+print(len(s))
