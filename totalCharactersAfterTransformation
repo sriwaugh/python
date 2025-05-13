@@ -1,6 +1,7 @@
 s = "abcyy"
 t = 2
 n = 1
+
 while n <= t:
     new = ''
     for ch in s:
