@@ -21,6 +21,7 @@ class MyHashSet:
     def contains(self, key: int) -> bool:
         index = self._hash(key)
         return key in self.buckets[index]
+    
 hashSet = MyHashSet()
 hashSet.add(1)
 hashSet.add(2)
