@@ -1,4 +1,4 @@
-words = ["e","a","b"], 
+words = ["e","a","b"]
 g = [0,0,1]
 n = len(g)
 res = []
