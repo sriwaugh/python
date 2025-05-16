@@ -7,7 +7,6 @@ def hasGroupsSizeX(deck):
         for x in range(2, min_freq + 1):
             if all(v % x == 0 for v in count.values()):
                 return True
-
         return False
 deck = [1,2,3,4,4,3,2,1]
 print(hasGroupsSizeX(deck))
