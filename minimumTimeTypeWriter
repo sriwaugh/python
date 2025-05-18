@@ -1,0 +1,17 @@
+def minTimeToType(self, word):
+        """
+        :type word: str
+        :rtype: int
+        """
+        total_time = 0
+        current = 'a'
+
+        for ch in word:
+            diff = abs(ord(ch) - ord(current))
+            step = min(diff, 26 - diff)  
+            total_time += step + 1 
+            current = ch
+        return total_time
+
+word = "abc"
+print(minTimeToType(word))
