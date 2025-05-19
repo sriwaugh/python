@@ -1,9 +1,5 @@
 def getLucky(self, s, k):
-        """
-        :type s: str
-        :type k: int
-        :rtype: int
-        """
+    
         number = ''
         for i in s:
             number += str(ord(i) - ord('a') + 1)
