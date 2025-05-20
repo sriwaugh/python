@@ -11,6 +11,5 @@ def isZeroArray(nums, queries):
 
         return all(sweep[i] >= nums[i] for i in range(n))
 
-
 nums = [1,0,1], queries = [[0,2]]
 print(isZeroArray(nums,queries))
