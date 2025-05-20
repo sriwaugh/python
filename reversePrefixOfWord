@@ -1,0 +1,15 @@
+def reversePrefix(self, word, ch):
+        """
+        :type word: str
+        :type ch: str
+        :rtype: str
+        """
+        if ch not in word:
+            return word
+        ind  = word.index(ch)
+        rev = word[:ind+1]
+        reve = rev[::-1] + word[ind+1:]
+        return reve
+
+word = "abcdefd", ch = "d"
+print(reversePrefix(word,ch))
