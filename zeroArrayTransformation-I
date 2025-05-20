@@ -1,5 +1,4 @@
 def isZeroArray(nums, queries):
-    
         n = len(nums)
         sweep = [0] * (n + 1)
 
