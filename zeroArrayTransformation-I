@@ -1,9 +1,5 @@
 def isZeroArray(nums, queries):
-        """
-        :type nums: List[int]
-        :type queries: List[List[int]]
-        :rtype: bool
-        """
+    
         n = len(nums)
         sweep = [0] * (n + 1)
 
