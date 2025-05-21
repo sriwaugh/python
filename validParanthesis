@@ -1,0 +1,8 @@
+def isPalindrome(self, s):
+        
+        lower = s.lower()
+        result = ''.join(char for char in lower if char.isalnum())
+        return result == result[::-1]
+
+s = "A man, a plan, a canal: Panama"
+print(isPalindrome(s))
