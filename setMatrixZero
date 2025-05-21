@@ -1,8 +1,5 @@
-def setZeroes(self, matrix):
-        """
-        :type matrix: List[List[int]]
-        :rtype: None Do not return anything, modify matrix in-place instead.
-        """
+def setZeroes(matrix):
+        
         m, n = len(matrix), len(matrix[0])
         row = [False] * m  # Step 1: Initialize row marker
         col = [False] * n  # Step 1: Initialize column marker
