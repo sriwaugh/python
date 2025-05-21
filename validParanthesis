@@ -1,4 +1,4 @@
-def isPalindrome(self, s):
+def isPalindrome(s):
         
         lower = s.lower()
         result = ''.join(char for char in lower if char.isalnum())
