@@ -1,0 +1,11 @@
+def capitalizeTitle(self, title):
+        """
+        :type title: str
+        :rtype: str
+        """
+        result = ' '.join(val[0].upper() + val[1:].lower() if len(val) > 2 else val.lower() for val in title.split())
+
+        return result
+
+title = "capiTalIze tHe titLe"
+print(capitalizeTitle(title))
