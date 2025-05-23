@@ -1,0 +1,15 @@
+def checkString(self, s):
+        """
+        :type s: str
+        :rtype: bool
+        """
+        if 'b' not in s:
+            return True
+        ind = s.index('b')
+        for i in range(ind,len(s)):
+            if s[i] == 'a':
+                return False
+        return True 
+
+s = "aaabbb"
+print(checkString(s))
