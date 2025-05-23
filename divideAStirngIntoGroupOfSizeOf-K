@@ -1,0 +1,22 @@
+def divideString(s, k, fill):
+        
+        n = len(s) % k
+        l = k - n
+        res = []
+        string = ""
+        for i in range(len(s)):
+            string += s[i]
+            if len(string) == k:
+                    res.append(string)
+                    string = ""
+                    
+        if n == 0:
+            return res 
+        
+        add = s[len(s)-n:] + (fill *l)
+        res.append(add)
+        return res 
+
+
+s = "abcdefghi", k = 3, fill = "x"
+print(divideString(s,k,fill))
