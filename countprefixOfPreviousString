@@ -1,0 +1,15 @@
+def countPrefixes(self, words, s):
+        """
+        :type words: List[str]
+        :type s: str
+        :rtype: int
+        """
+        count=0
+        for i in words:
+            if (s[:len(i)]==i):
+                count+=1
+        return count
+
+
+words = ["a","b","c","ab","bc","abc"], s = "abc"
+print(countPrefixes(words,s))
