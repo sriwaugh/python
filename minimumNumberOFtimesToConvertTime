@@ -1,0 +1,17 @@
+def convertTime(self, current, correct):
+        """
+        :type current: str
+        :type correct: str
+        :rtype: int
+        """
+        a = (int(current[:2]) * 60) + int(current[3:])
+        b = (int(correct[:2]) * 60) + int(correct[3:])
+        c = b - a
+        count = 0
+        for i in [60,15,5,1]:
+            count += c // i
+            c %= i   
+        return count
+
+current = "02:30", correct = "04:35"
+print(convertTime(current,correct))
