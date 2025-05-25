@@ -1,0 +1,14 @@
+def rearrangeCharacters(s, target):
+        """
+        :type s: str
+        :type target: str
+        :rtype: int
+        """
+        res = []
+        for i in range(len(target)):
+            res.append(s.count(target[i])//target.count(target[i]))
+            
+        return min(res)
+
+s = "ilovecodingonleetcode", target = "code"
+print(rearrangeCharacters(s,target))
