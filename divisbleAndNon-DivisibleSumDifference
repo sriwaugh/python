@@ -8,7 +8,6 @@ def differenceOfSums(n, m):
                 add1 += i
         return add - add1
 
-
 n = 10
 m = 3
 print(differenceOfSums(n,m))
