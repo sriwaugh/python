@@ -1,9 +1,5 @@
 def digitSum(s, k):
-        """
-        :type s: str
-        :type k: int
-        :rtype: str
-        """
+       
         while len(s) > k:
             res = []
             total = 0
