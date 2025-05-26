@@ -1,4 +1,4 @@
-def digitSum(self, s, k):
+def digitSum(s, k):
         """
         :type s: str
         :type k: int
