@@ -1,4 +1,4 @@
-def differenceOfSums(self, n, m):
+def differenceOfSums(n, m):
         """
         :type n: int
         :type m: int
@@ -13,5 +13,6 @@ def differenceOfSums(self, n, m):
         return add - add1
 
 
-n = 10, m = 3
+n = 10
+m = 3
 print(differenceOfSums(n,m))
