@@ -1,4 +1,4 @@
-def percentageLetter(self, s, letter):
+def percentageLetter(s, letter):
         """
         :type s: str
         :type letter: str
