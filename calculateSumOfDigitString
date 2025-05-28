@@ -1,4 +1,5 @@
 def digitSum(s, k):
+        
         while len(s) > k:
             res = []
             total = 0
