@@ -6,6 +6,7 @@ def strongPasswordCheckerII(password):
         num = False
         spl_ans = False
         spl = "!@#$%^&*()-+"
+        
         for i in range(n):
             if password[i].islower():
                 low = True
