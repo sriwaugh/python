@@ -1,0 +1,23 @@
+def reverseVowels(self, s):
+        """
+        :type s: str
+        :rtype: str
+        """
+        s = list(s)
+        res = "aeiouAEIOU"
+        l , h = 0 , len(s)-1
+        while l <= h:
+            if s[l] not in res:
+                l += 1
+                continue
+            if s[h] not in res:
+                h -= 1
+                continue
+            s[h], s[l] = s[l], s[h]
+            l += 1
+            h -= 1
+
+        return ''.join(s)
+
+s = "IceCreAm"
+print(reverseVowels(s))
