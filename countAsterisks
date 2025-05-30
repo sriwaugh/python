@@ -1,8 +1,5 @@
-def countAsterisks(self, s):
-        """
-        :type s: str
-        :rtype: int
-        """
+def countAsterisks(ss):
+        
         line = cnt = 0
         for i in s:
             if i == '|':
