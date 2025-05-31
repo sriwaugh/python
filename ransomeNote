@@ -1,0 +1,10 @@
+def canConstruct(r, m):
+        
+        for i in r:
+            if  r.count(i) > m.count(i):
+                return False
+        return True
+
+r = "a"
+m = "b"
+print(canConstruct(r,m))
