@@ -1,5 +1,4 @@
 def distributeCandies(n, limit):
-        
         res=0
 
         for i in range(0,min(n,limit)+1):
