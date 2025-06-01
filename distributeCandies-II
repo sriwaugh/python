@@ -1,0 +1,17 @@
+def distributeCandies(self, n, limit):
+        """
+        :type n: int
+        :type limit: int
+        :rtype: int
+        """
+        res=0
+
+        for i in range(0,min(n,limit)+1):
+            upper_bounds=max(0,n-i-limit)
+            lower_bounds=min(limit,n-i)
+            count=max(0,lower_bounds-upper_bounds+1)
+            res+=count
+        return res
+
+n = 5, limit = 2
+print(distributeCandies(n, limit))
