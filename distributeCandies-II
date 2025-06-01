@@ -1,4 +1,4 @@
-def distributeCandies(self, n, limit):
+def distributeCandies(n, limit):
         
         res=0
 
