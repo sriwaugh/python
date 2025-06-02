@@ -32,6 +32,8 @@ class Link:
             return
         prev.next = temp.next
         temp = None
+
+        
     def traverse(self):
         temp = self.head
         while temp:
